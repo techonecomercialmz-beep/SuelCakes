@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suel Cakes — Delícias que Encantam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #000;
+}
+
+.navbar .logo {
+    color: #ff69b4;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #000;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 0 0 8px 8px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Suel <span>Cakes</span></h1>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="encomendas.html">Encomendas</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<script>
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    navMenu.classList.toggle('show');
+}
+</script>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h2>As melhores delícias para todos os momentos</h2>
+            <p>Bolos, doces e salgados preparados com amor e entrega ao domicílio.</p>
+            <a href="encomendas.html" class="btn">Fazer Encomenda</a>
+        </div>
+    </section>
+<section class="descricao-marca" style="background-color: #f7f2e9; padding: 60px 20px; text-align: center;">
+  
+    <p style="max-width: 800px; margin: 0 auto; color: #555; font-size: 18px;">
+        Na Suel Cakes, cada bolo, doce e salgado é feito com dedicação e paixão. Nossa missão é levar sabor e alegria para cada momento especial, oferecendo produtos frescos e deliciosos com entrega ao domicílio.
+    </p>
+</section>
+
+
+
+
+    <section class="destaques">
+        <h2>Produtos em Destaque</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="chocolate.jpg" alt="Bolo de Chocolate">
+                <h3>Bolo de Chocolate</h3>
+                <p>Rico e cremoso. Ideal para qualquer ocasião.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/99/ba/a4/docinhos-variados.jpg" alt="Doces variados">
+                <h3>Doces Variados</h3>
+                <p>Docinhos perfeitos para festas e eventos.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNB_AWC94kXTpXWmq5DHEFFTme05EXWD3Sr9OImINzfqcBUAJBfJHNU0F2r9HIhmtpDU5wkHG1Ap2_bqjfN73tBtL9rwudvoX0rb8dwyd4G4wEbYNXwQ9_zCecvPcQO_nzH8P3msIQX6Pnai05JTzmJ_yje_tQ1eNZuaS42eOJrLOPZNaqieerrs-E/w1200-h630-p-k-no-nu/salgados-para-festa.jpg" alt="Salgados">
+                <h3>Salgados</h3>
+                <p>Salgadinhos crocantes e saborosos para todas as idades.</p>
+            </div>
+        </div>
+    </section>
+<section class="bolos-ocasiao" style="padding: 60px 20px; background-color: #fff;">
+    <h2 style="text-align: center; color:black; font-size: 32px; margin-bottom: 40px;">Bolos para Qualquer Ocasião</h2>
+
+    <div class="carrossel-wrapper" style="position: relative; max-width: 1000px; margin: 0 auto;">
+        <div class="carrossel-container" style="overflow-x: auto; display: flex; gap: 25px; scroll-behavior: smooth; padding-bottom: 15px;">
+            <div style="flex: 0 0 300px; text-align: center;">
+                <img src="Imagem WhatsApp 2025-11-24 às 15.41.04_7560ec57.jpg" alt="Bolo de Aniversário" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;">
+                <h3 style="margin-top: 10px; color: #333;">Bolo de Aniversário</h3>
+            </div>
+            <div style="flex: 0 0 300px; text-align: center;">
+                <img src="https://cdn0.casamentos.com.br/article-real-wedding/695/original/1280/jpg/2012411.jpeg" alt="Bolo de Casamento" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;">
+                <h3 style="margin-top: 10px; color: #333;">Bolo de Casamento</h3>
+            </div>
+            <div style="flex: 0 0 300px; text-align: center;">
+                <img src="infatil.jpg" alt="Bolo Infantil" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;">
+                <h3 style="margin-top: 10px; color: #333;">Bolo Infantil</h3>
+            </div>
+            <div style="flex: 0 0 300px; text-align: center;">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Bolo de Chocolate" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;">
+                <h3 style="margin-top: 10px; color: #333;">Bolo de Chocolate</h3>
+            </div>
+            <div style="flex: 0 0 300px; text-align: center;">
+                <img src="https://canaldareceita.com.br/wp-content/uploads/2025/01/BOLO-DE-LEITE-NINHO-COM-MORANGO.jpg" alt="Bolo de Morango" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;">
+                <h3 style="margin-top: 10px; color: #333;">Bolo de Morango</h3>
+            </div>
+            <div style="flex: 0 0 300px; text-align: center;">
+                <img src="bolobatismo.jpg" alt="Bolo Red Velvet" style="width: 100%; height: 250px; object-fit: cover; border-radius: 12px;">
+                <h3 style="margin-top: 10px; color: #333;">Bolo para Baptismo</h3>
+            </div>
+        </div>
+
+        <div class="barra-progresso" style="height: 8px; background-color: #ddd; border-radius: 5px; overflow: hidden; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
+            <div id="progresso" style="height: 100%; width: 0%; background-color: #ff69b4; border-radius: 5px;"></div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .carrossel-container::-webkit-scrollbar { display: none; }
+    .carrossel-container { -ms-overflow-style: none; scrollbar-width: none; }
+
+    @media (max-width: 768px) {
+        .carrossel-container { gap: 15px; }
+        .carrossel-container > div { flex: 0 0 70%; }
+    }
+    @media (max-width: 480px) {
+        .carrossel-container > div { flex: 0 0 90%; }
+    }
+</style>
+
+<script>
+    const carrosselContainer = document.querySelector('.carrossel-container');
+    const barraProgresso = document.getElementById('progresso');
+
+    function atualizarProgresso() {
+        const maxScroll = carrosselContainer.scrollWidth - carrosselContainer.clientWidth;
+        const porcentagem = (carrosselContainer.scrollLeft / maxScroll) * 100;
+        barraProgresso.style.width = porcentagem + '%';
+    }
+
+    carrosselContainer.addEventListener('scroll', atualizarProgresso);
+    window.addEventListener('resize', atualizarProgresso);
+
+    atualizarProgresso();
+</script>
+
+
+    <section class="sobre-home">
+        <div class="sobre-text">
+            <h2>Sobre a Suel Cakes</h2>
+            <p>
+                Somos especialistas em criar bolos, doces e salgados que encantam pelo sabor
+                e apresentação. Trabalhamos com produtos frescos e oferecemos entrega ao domicílio
+                para maior comodidade dos nossos clientes.
+            </p>
+            <a class="btn" href="sobre.html">Saiba Mais</a>
+        </div>
+    </section>
+    <section id="newsletter" style="background-color: #fff; padding: 40px 20px; text-align: center;">
+    <h2 style="color: #ff7bb1; font-size: 24px; margin-bottom: 10px;">SUBSCREVA A NOSSA NEWSLETTER</h2>
+    <p style="color: #666; margin-bottom: 20px;">Seja o primeiro a receber as novidades subscrevendo a nossa Newsletter</p>
+    <form style="display: flex; justify-content: center; max-width: 500px; margin: 0 auto;">
+        <input type="email" placeholder="Introduza o seu email" style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px 0 0 4px; font-size: 16px;">
+        <button type="submit" style="background-color: #ff7bb1; color: #fff; border: none; padding: 10px 20px; border-radius: 0 4px 4px 0; cursor: pointer;">Subscreva</button>
+    </form>
+</section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Suel Cakes</h3>
+                <p>Delícias feitas com amor.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                </ul>
+            </div>
+
+           <div class="footer-section">
+    <h3>Contactos</h3>
+    <p><i class="fa-brands fa-whatsapp"></i> +258 84 958 1737</p>
+    <p><i class="fa-solid fa-envelope"></i> suelcakes@gmail.com</p>
+    <p><i class="fa-solid fa-location-dot"></i> Maputo — Moçambique</p>
+</div>
+
+        </div>
+
+        <p class="copy">© 2025 Suel Cakes — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

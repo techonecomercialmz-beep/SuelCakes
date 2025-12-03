@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Suel Cakes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fff;
+        color: #333;
+    }
+
+    .banner {
+        width: 100%;
+        height: 320px;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                    url("https://recipesblob.oetker.com.br/assets/a81bc035eb7f407faaa2c93e04edaf78/1272x764/bolo-de-aniversrio-de-chocolate.webp") center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+        text-shadow: 2px 2px 8px #000;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #ff5fa2;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .info-box,
+    .form-box {
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        border: 2px solid #f7cfe2;
+        box-shadow: 0 0 8px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .info-item i {
+        color: #ff5fa2;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid #ffb6d8;
+        background: #fff;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        background: #ff5fa2;
+        border: none;
+        padding: 12px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff2e8d;
+    }
+
+
+    footer {
+        background: #000;
+        padding: 25px;
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+    }
+
+    footer .social a {
+        color: #ff5fa2;
+        font-size: 22px;
+        margin: 0 12px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    footer .social a:hover {
+        color: #fff;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="banner">
+    Contacte a Suel Cakes
+</div>
+
+<div class="container">
+
+    <div class="info-box">
+        <h2>Informações de Contacto</h2>
+
+        <div class="info-item">
+            <i class="fa-solid fa-phone"></i> +258 84 958 1737
+        </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-envelope"></i> suelcakes@gmail.com
+        </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i> Maputo, Moçambique
+        </div>
+    </div>
+
+    <div class="form-box">
+        <h2>Envie-nos uma Mensagem</h2>
+
+        <form action="enviar.php" method="POST">
+            <label>Nome</label>
+            <input type="text" name="nome" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Assunto</label>
+            <input type="text" name="assunto" required>
+
+            <label>Mensagem</label>
+            <textarea name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+<footer>
+    <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

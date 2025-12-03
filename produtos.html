@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suel Cakes — Catálogo de Produtos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #000;
+        }
+        .navbar .logo {
+            color: #ff69b4;
+            font-size: 24px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: #fff;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #000;
+                flex-direction: column;
+                width: 200px;
+                padding: 10px 0;
+                border-radius: 0 0 8px 8px;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Suel <span>Cakes</span></h1>
+
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="encomendas.html">Encomendas</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner" style="background: url('https://i.ytimg.com/vi/IEgn7CuXRjQ/maxresdefault.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center;">
+        <div class="banner-text" style="background: rgba(0,0,0,0.5); padding: 20px 30px; border-radius: 10px; color: #fff; text-align: center;">
+            <h2>Nosso Catálogo de Produtos</h2>
+            <p>Bolos, doces e salgados feitos com carinho para você.</p>
+        </div>
+    </section>
+
+    <section class="filtros" style="padding: 30px 20px; text-align: center;">
+        <button class="btn filtro" data-categoria="todos">Todos</button>
+        <button class="btn filtro" data-categoria="bolos">Bolos</button>
+        <button class="btn filtro" data-categoria="doces">Doces</button>
+        <button class="btn filtro" data-categoria="salgados">Salgados</button>
+    </section>
+
+    <section class="catalogo" style="padding: 40px 20px;">
+        <div class="cards" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;">
+            <div class="card produto" data-categoria="bolos">
+                <img src="chocolate.jpg" alt="Bolo de Chocolate" style="width:100%; border-radius:12px;">
+                <h3>Bolo de Chocolate</h3>
+                <p>Delicioso bolo de chocolate com cobertura cremosa.</p>
+                <span class="preco">MT 2,500</span>
+                <a href="encomendas.html" class="btn">Encomendar</a>
+            </div>
+            <div class="card produto" data-categoria="doces">
+                <img src="https://confeitarianarede.com.br/wp-content/uploads/2023/04/brigadeirogourmet-1-1024x576.webp" alt="Doces Variados" style="width:100%; border-radius:12px;">
+                <h3>Doces Variados</h3>
+                <p>Mini doces perfeitos para festas e eventos.</p>
+                <span class="preco">MT 1,200</span>
+                <a href="encomendas.html" class="btn">Encomendar</a>
+            </div>
+            <div class="card produto" data-categoria="salgados">
+                <img src="https://salgadosparavender.com.br/wp-content/uploads/2024/12/salgados-para-vender-a-1-real.webp" alt="Salgados" style="width:100%; border-radius:12px;">
+                <h3>Salgados</h3>
+                <p>Deliciosos salgadinhos crocantes para qualquer ocasião.</p>
+                <span class="preco">MT 1,500</span>
+                <a href="encomendas.html" class="btn">Encomendar</a>
+            </div>
+            <div class="card produto" data-categoria="bolos">
+                <img src="https://desiree.ind.br/wp-content/uploads/2023/08/bolo-de-casamento-simples-03-730x731-1.jpg" alt="Bolo de Casamento" style="width:100%; border-radius:12px;">
+                <h3>Bolo de Casamento</h3>
+                <p>Bolo elegante e delicioso para seu grande dia.</p>
+                <span class="preco">MT 5,500</span>
+                <a href="encomendas.html" class="btn">Encomendar</a>
+            </div>
+            <div class="card produto" data-categoria="doces">
+                <img src="https://littlesfestas.com.br/wp-content/uploads/2024/03/459f2b5c-285a-4719-8362-6b25330dfc2f.jpg" alt="Doces Finos" style="width:100%; border-radius:12px;">
+                <h3>Doces Finos</h3>
+                <p>Doces delicados para eventos sofisticados.</p>
+                <span class="preco">MT 1,800</span>
+                <a href="encomendas.html" class="btn">Encomendar</a>
+            </div>
+            <div class="card produto" data-categoria="salgados">
+                <img src="https://interlasermaquinas.com.br/wp-content/uploads/2022/12/quais-os-salgados-para-festa-1-1024x661.jpg" alt="Salgados para Festas" style="width:100%; border-radius:12px;">
+                <h3>Salgados para Festas</h3>
+                <p>Salgadinhos variados, crocantes e deliciosos.</p>
+                <span class="preco">MT 2,000</span>
+                <a href="encomendas.html" class="btn">Encomendar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Suel Cakes</h3>
+                <p>Delícias feitas com amor.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="encomendas.html">Encomendas</a></li>
+                </ul>
+            </div>
+
+           <div class="footer-section">
+                <h3>Contactos</h3>
+                <p><i class="fa-brands fa-whatsapp"></i> +258 84 958 1737</p>
+                <p><i class="fa-solid fa-envelope"></i> suelcakes@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Maputo — Moçambique</p>
+            </div>
+        </div>
+        <p class="copy">© 2025 Suel Cakes — Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const filtros = document.querySelectorAll('.filtro');
+        const produtos = document.querySelectorAll('.produto');
+
+        filtros.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const categoria = btn.getAttribute('data-categoria');
+                produtos.forEach(prod => {
+                    if(categoria === 'todos' || prod.getAttribute('data-categoria') === categoria){
+                        prod.style.display = 'block';
+                    } else {
+                        prod.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>

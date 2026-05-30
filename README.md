@@ -1,4 +1,3 @@
-![SuelCakes Preview](./screenshot.png)
 
 🔗 [Ver site ao vivo](https://anatovele.github.io/SuelCakes/)
 # SuelCakes

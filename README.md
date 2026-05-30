@@ -92,7 +92,7 @@ SuelCakes/
 ### 4️⃣ Pegar o link gerado
 O GitHub cria o link:
 
-https://techonecomercialmz-beep.github.io/SuelCakes/
+https://anatovele.github.io/SuelCakes/
 
 
 ---

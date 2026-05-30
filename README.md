@@ -1,3 +1,6 @@
+![SuelCakes Preview](./screenshot.png)
+
+🔗 [Ver site ao vivo](https://anatovele.github.io/SuelCakes/)
 # SuelCakes
 # SuelCakes — Loja Online de Bolos e Doces
 
